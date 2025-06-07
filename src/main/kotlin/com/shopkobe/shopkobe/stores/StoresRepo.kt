@@ -28,6 +28,7 @@ data class StoreEntity(
     val zipcode: Double,
     @Field("work_time")
     val workTime: String,
+    val logoUrl: String?,
 
     val latitude: Double? = null,
     val longitude: Double? = null
