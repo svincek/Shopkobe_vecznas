@@ -23,7 +23,11 @@ class StoresService(
                 val coords = geocodingService.getCoordinates(fullAddress)
                 if (coords != null) {
                     logger.info("Updating store ${store.storeId} with coords: $coords")
-                    store.copy(latitude = coords.first, longitude = coords.second)
+                    store.copy(
+                        latitude = coords.first,
+                        longitude = coords.second,
+                        logoUrl = store.logoUrl
+                    )
                 } else {
                     logger.warn("No coordinates found for address: $fullAddress")
                     store
