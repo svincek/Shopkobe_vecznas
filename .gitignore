@@ -39,5 +39,4 @@ out/
 ### Kotlin ###
 .kotlin
 
-local.properties
-application.properties
+/src/main/resources/application.properties

@@ -1,11 +1,12 @@
-# Stage 1: Build the app
+# -------- STAGE 1: Build the application --------
 FROM gradle:8.0.2-jdk17 AS build
-COPY --chown=gradle:gradle . /app
 WORKDIR /app
-RUN gradle build --no-daemon
+COPY . .
+RUN gradle clean build --no-daemon
 
-# Stage 2: Run the app
-FROM openjdk:17-alpine
+# -------- STAGE 2: Run the application --------
+FROM openjdk:17-jdk-alpine
+WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
