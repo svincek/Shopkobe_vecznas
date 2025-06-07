@@ -1,0 +1,13 @@
+package com.shopkobe.shopkobe
+
+import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
+
+@SpringBootTest
+class ShopkobeApplicationTests {
+
+	@Test
+	fun contextLoads() {
+	}
+
+}
