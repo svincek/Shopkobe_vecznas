@@ -42,6 +42,6 @@ Copy
 Edit
 curl "https://shopkobe.onrender.com/articles?page=0&size=5"
 curl "https://shopkobe.onrender.com/stores?page=1&size=10"
-
+```
 👤 Autor
 Simon Vincek – simon.vincek@gmail.com
