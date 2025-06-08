@@ -26,7 +26,7 @@ Ovo je backend servis za aplikaciju **Shopko**, razvijen u Spring Bootu s ciljem
 | GET    | `/articles?page=0&size=10`  | Dohvat artikala s paginacijom         |
 | GET    | `/stores?page=0&size=10`    | Dohvat trgovina s koordinatama        |
 
-## ⚙️ Konfiguracija
+## Konfiguracija
 
 U `application.properties`) datoteci:
 
